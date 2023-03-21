@@ -1,0 +1,62 @@
+body,
+html {
+/*Ensures body and html cover 100% of the screen*/
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+/*For background image*/
+/*This first line fills the entire page with the image. Great trick for flexible background.*/
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #E2DBDB;
+}
+
+hr {
+    margin: 20px auto;
+    color: #F05F44;
+    border: 3px solid #F05F44;
+    max-width: 65px;
+    opacity: 1;  
+}
+
+.buffer {
+  height: 10rem;
+}
+
+.btn {
+  font-weight: 700;
+/*Makes edges rounded*/
+  border-radius: 300px;
+  text-transform: uppercase;
+}
+
+/*May resolve any hover issues.
+.btn-primary {  
+    background-color: #F05F44;  
+    border-color: #F05F44;  
+    --bs-btn-hover-bg: #ee4b08; 
+    --bs-btn-hover-border-color: #ee4b08;
+}*/
+
+.btn-primary {
+  background-color: #F05F44;
+  border-color: #F05F44;
+}
+
+.btn-primary:hover {
+  background-color: #EE4B08;
+  border-color: #EE4B08;
+/*Increases width by 4px*/
+  border-width: 4px;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
